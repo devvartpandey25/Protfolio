@@ -17,7 +17,7 @@ body {
 
 .section-title {
   font-weight: bold;
-  background: linear-gradient(to right, #2563eb, #7c3aed); /* Sunset Glow 🌅 */
+  background: linear-gradient(to right, #2563eb, #7c3aed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1.5rem;
@@ -87,6 +87,61 @@ body.dark .skill-box h5 {
 }
 
 body.dark .skill-box p {
+  color: #e2e8f0;
+}
+
+/* === Education Box Styling === */
+.edu-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 .5rem 1rem rgba(37,99,235,.15);
+  border: 2px solid transparent;
+  transition: transform .3s, box-shadow .3s, border-image .3s;
+  text-align: left;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 1rem 2rem rgba(124,58,237,.4);
+  border-image: linear-gradient(45deg,#2563eb,#7c3aed) 1;
+}
+
+.edu-card h5 {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #2563eb;
+}
+
+.edu-card small {
+  display: block;
+  color: #6b7280;
+  margin-bottom: 0.3rem;
+}
+
+.edu-card p {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+body.dark .edu-card {
+  background: rgba(30,41,59,.8);
+  color: #f1f5f9;
+  box-shadow: 0 .5rem 1rem rgba(255,255,255,.1);
+}
+
+body.dark .edu-card:hover {
+  box-shadow: 0 1rem 2rem rgba(139,92,246,.6);
+}
+
+body.dark .edu-card h5 {
+  color: #a78bfa;
+}
+
+body.dark .edu-card small,
+body.dark .edu-card p {
   color: #e2e8f0;
 }
 
